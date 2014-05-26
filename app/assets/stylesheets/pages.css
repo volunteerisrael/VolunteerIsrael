@@ -1,0 +1,34 @@
+.bgImg {
+	background: #3498db;
+	height: 100%;
+	width: 100%;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-filter: blur(px);
+    -webkit-filter: contrast(110%;);
+    z-index:0;
+    position:fixed;
+}
+
+.content {
+	background: #ecf0f1;
+	text-align: center;
+	padding: 40px 30px 20px 30px;
+	height: 200px;
+	width: 600px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	border-radius: 100px;
+}
+.content p{
+	font-size: 16px;
+		font-family: 'Ubuntu', sans-serif;
+
+}
+#logo {
+	margin-top: 8px;
+}
