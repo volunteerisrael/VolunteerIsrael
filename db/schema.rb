@@ -20,7 +20,8 @@ ActiveRecord::Schema.define(version: 20140526035350) do
     t.string   "address2"
     t.string   "city"
     t.integer  "zipcode"
-    t.string   "country",     default: "Israel"
+    t.string   "country",            default: "Israel"
+    t.string   "organization_image"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

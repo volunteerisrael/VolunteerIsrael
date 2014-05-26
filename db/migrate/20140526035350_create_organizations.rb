@@ -8,6 +8,7 @@ class CreateOrganizations < ActiveRecord::Migration
       t.string :city
       t.integer :zipcode
       t.string :country, default: "Israel"
+      t.string :organization_image
 
       t.timestamps
     end

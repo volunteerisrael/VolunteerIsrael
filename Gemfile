@@ -28,6 +28,9 @@ gem 'spring',        group: :development
 
 gem 'rails_admin'
 
+gem "rmagick", '~> 2.13.2', :require => 'RMagick'
+gem "carrierwave"
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

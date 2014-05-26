@@ -6,8 +6,8 @@
         <div class="panel-heading">
           <h3 class="panel-title"><h4><%= organization.name %></h4></h3>
         </div>
-        <div class="panel-body">
-          <img src='http://www.thetower.org/wp-content/uploads/2013/04/Cows-Shavuot-Ein-Hashofet.jpg' height='220px' width='250px' class="img-responsive"><div class='panel-title'>
+        <div class="panel-body"> 
+          <%= image_tag organization.organization_image, :class => "img-responsive" %>
           <p><%= organization.description %></p>
           <%= link_to 'More Info', organization, :class =>"btn btn-md  btn-primary btn-center btn-block" %>
         </div>
