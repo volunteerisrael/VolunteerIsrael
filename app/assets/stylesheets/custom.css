@@ -5,9 +5,23 @@
  .navbar navbar-nav {
  	margin-left: 20px;
  }
+.large{
+	font-size: 30px;
+	letter-spacing: 0px;
+}
+.sml{
+	font-size: 10px;
+	margin-left: 0px;
+	letter-spacing: 0px;
+}
+#logo {
+	top: 2em;
+}
+
  li{
  	left: 30px;
  }
+ 
 .img-responsive{
 	width: 250px;
 	height: 200px;
@@ -15,16 +29,17 @@
  .active{
  	background-color: lightblue;
  }
-.bgImgContainer{
-	background: #3498db;
-	height: 100%;
+.topImgContainer{
+	top: 0px;
+	background: blue;
+	height: 50%;
 	width: 100%;
-	position: fixed;
+	position: absolute;
 }
 
 h1 {
 	font-size:70px;
-	color: #E3E3FC;	
+	color: white;	
 	font-family: 'Ubuntu', sans-serif;
 }
 h2, h3 {
@@ -32,30 +47,27 @@ h2, h3 {
 	color: #E3E3FC
 }
 .container .row .col-md-10 {
-	top: 22em;
+	top: 8em;
 }
 .col-md-12 h3 {
 	margin-top: 22%;
 	font-size: 40px;
 }
 .col-md-12 {
-	top: 10em;
+	top: 13em;
+}
 
+.col-md-4{
+	top: 10em;
 }
 #index_panel {
 	top: 20em;
 }
-/*.panel-body {
-	height: 300px;
-	margin-top: 0px;
-	font-size: 16px;
-	text-align: center;
-	color: black;
-	padding-right: 15px;
-	padding-left: auto;
-}*/
 .panel-heading {
 	
+}
+.col-md-12 h3{
+	margin-top: 16em;
 }
 .row .col-md-6 {
 	top: 14em;
@@ -63,6 +75,7 @@ h2, h3 {
 	margin-right: auto;
 	left: 26em;
 }
+
 p{
 	font-size: 14px;
 	color: black;
@@ -78,13 +91,11 @@ p{
 span{
 	margin-left: 5px;
 }
-#logo{
-	font-size: 20px;
-	font-family: 
-}
-.brand{
-	margin-left: 0px;
-	font-size: 12px;
+.top {
+	background: url('http://www.armapartners.com/wp-content/uploads/2013/06/banner-telaviv-sm.jpg') no-repeat center center fixed;
+	height: 100%;
+	position: absolute;
+	width: 100%;
 }
 .list {
 	text-align: center;
@@ -92,9 +103,9 @@ span{
 .btn-center{
 	text-align: center;
 }
-.topImgContainer{
-	background: url('images/tel_aviv.jpg');
-	height: 50%;
-	width: 100%;
-	z-index: 2;
+body {
+	color: red;
 }
+.links {
+}
+a:hover{color: lightblue; text-decoration: none}
