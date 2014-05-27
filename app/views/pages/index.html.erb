@@ -1,3 +1,5 @@
+
+<div class='topImgContainer'></div>
 <div class='bgImgContainer'></div>
 
 
@@ -25,55 +27,33 @@
     		</div>
 		</div>
 	</div>
-<div class='container-fluid'>
-	<div class = "row">
+<div class='container'>
+	<div class='row'>
 		<div class='col-md-12'>
 			<center><h3>Our Featured Volunteer Opportunities</h3></center>
-
-<!-- featured  -->
-<div class="container">
-		<div class="col-md-10 col-md-offset-1">
-			<div class="col-md-4">
-				<center>
-					<div class="panel panel-info">
-  					<div class="panel-heading">
-   		 				<img src='http://www.thetower.org/wp-content/uploads/2013/04/Cows-Shavuot-Ein-Hashofet.jpg' height='220px' width='250px' class="img-responsive"><div class='panel-title'><h4>Kibbutz Ein HaShofet</h4>
-   		 				<p>Agriculture | Electronics | Dairy Farming</p>
-   		 			</div>
-  						</div>
-  				<div class="panel-body">
-    					<button class='btn btn-lg'>More Info</button>
- 				 </div>
- 				 </center>
-				</div>
-
-				<div class="col-md-4">
-				<center>
-					<div class="panel panel-info">
-  					<div class="panel-heading">
-   		 				<%= image_tag "naz.jpg", size: "250x220", class: "img-responsive" %><div class="panel-title"><h4>Nazareth Hostel</h4></div>
-   		 				<p>Work with Jews, Christians and Muslims | Old City | Sustainability | Peace Making</p>
-
-
-  					</div>
-  				<div class="panel-body">
-    					<button class='btn btn-lg'>More Info</button> 
- 				 </div>
- 				 </center>
-				</div>
-
-				<div class="col-md-4">
-				<center>
-					<div class="panel panel-info">
-  					<div class="panel-heading">
-  						<img src="http://blog.thesummit.co/wp-content/uploads/2013/09/tel-aviv.jpg" height='220' width='250' class="img-responsive">
-  						<div class="panel-title"><h4>Tikkun Olam in Tel Aviv-Jaffa</h4></div>
-  						<p>Coexistence | Peace making | Social Action | Volunteer/Internship</p>
-  						</div>
-  				<div class="panel-body">
-  					<button class='btn btn-lg'>More Info</button>
- 				 </div>
-
- 				 </center>
-				</div>
+		</div>
+	</div>
 </div>
+
+<div class='container' id='index'>
+	<div class='row'>
+		<div class="col-md-10 col-md-offset-1">
+			<% @organizations[0..2].each do |organization| %>
+			  <div class="col-md-4">
+			    <center>
+			      <div class="panel panel-info">
+			        <div class="panel-heading">
+			          <h3 class="panel-title"><h4><%= organization.name %></h4></h3>
+			        </div>
+			        <div class="panel-body"> 
+			          <%= image_tag organization.organization_image, :class => "img-responsive" %>
+			          <p><%= organization.name %></p>
+			          <%= link_to 'More Info', organization, :class =>"btn btn-md  btn-primary btn-center btn-block" %>
+			        </div>
+				  </div>
+			    </center>
+			  </div>
+			<% end %>
+			</div>
+		</div>
+	</div>

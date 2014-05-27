@@ -8,7 +8,10 @@
  li{
  	left: 30px;
  }
-
+.img-responsive{
+	width: 250px;
+	height: 200px;
+}
  .active{
  	background-color: lightblue;
  }
@@ -18,19 +21,7 @@
 	width: 100%;
 	position: fixed;
 }
- /*.bgImgContainer{
-	background-image:url('/images/tel_aviv.jpg'); 
-	height: 100%;
-	width: 100%;
-	-webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    -webkit-filter: blur(4px);
-    -webkit-filter: contrast(150%;);
-    z-index:0;
-    position: fixed;
-}*/
+
 h1 {
 	font-size:70px;
 	color: #E3E3FC;	
@@ -40,34 +31,37 @@ h2, h3 {
 	font-family: 'Ubuntu', sans-serif;
 	color: #E3E3FC
 }
-
+.container .row .col-md-10 {
+	top: 22em;
+}
 .col-md-12 h3 {
-	margin-top: 20%;
+	margin-top: 22%;
 	font-size: 40px;
 }
 .col-md-12 {
 	top: 10em;
 
 }
-.container .col-md-10 {
-	top: 80px;
+#index_panel {
+	top: 20em;
 }
-.panel-body {
+/*.panel-body {
+	height: 300px;
 	margin-top: 0px;
 	font-size: 16px;
 	text-align: center;
 	color: black;
 	padding-right: 15px;
 	padding-left: auto;
-}
+}*/
 .panel-heading {
 	
 }
 .row .col-md-6 {
-	top: 12em;
+	top: 14em;
 	margin-left: auto;
 	margin-right: auto;
-	left: 20em;
+	left: 26em;
 }
 p{
 	font-size: 14px;
@@ -92,8 +86,15 @@ span{
 	margin-left: 0px;
 	font-size: 12px;
 }
-
+.list {
+	text-align: center;
+}
 .btn-center{
 	text-align: center;
 }
-a:hover {color: white};
+.topImgContainer{
+	background: url('images/tel_aviv.jpg');
+	height: 50%;
+	width: 100%;
+	z-index: 2;
+}
