@@ -22,7 +22,7 @@
       <ul class="nav navbar-nav">
         <li class='head'><a href="/about.html">About</a></li>
         <li class='head'><a href="#">FAQ</a></li>
-        <!-- <li class="dropdown">
+        <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Categories <b class="caret"></b></a>
           <ul class="dropdown-menu">
             <li><a href="#">Agriculture</a></li>
@@ -32,9 +32,17 @@
             <li><a href="/results.html">All</a></li>
             <li class="divider"></li>
           </ul>
-        </li> -->
+        </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
+          <!-- <li>
+            <% if notice %>
+                <p class="text-success" id="fade-out"><%= notice %></p>
+            <% end %>
+            <% if alert %>
+                <p style='color:red;' id="fade-out"><%= alert %></p>
+            <% end %>
+          </li> -->
         <% if user_signed_in? %>
           <li><%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %></li>
           <li><%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %></li>

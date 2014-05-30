@@ -1,0 +1,104 @@
+.img-responsive{
+	width: 250px;
+	height: 200px;
+}
+ .active{
+ 	background-color: lightblue;
+ }
+
+h1 {
+	font-weight: bolder;
+	font-size:70px;
+	font-weight: 100;
+	color: #E6E6E6;	
+	font-family: 'Ubuntu', sans-serif;
+	position: relative;
+}
+h2, h3 {
+	font-family: 'Ubuntu', sans-serif;
+	color: #E6E6E6;
+}
+.container .row .col-md-10 {
+	top: 5em;
+}
+.col-md-12 h3 {
+	margin-top: 16em;
+	font-size: 40px;
+}
+.col-md-12 {
+	top: 13em;
+}
+
+.col-md-4{
+	top: 10em;
+}
+#index_panel {
+	top: 20em;
+}
+.panel-heading {
+	
+}
+.row .col-md-6 {
+	top: 14em;
+	margin-left: auto;
+	margin-right: auto;
+	left: 26em;
+}
+
+p{
+	font-size: 14px;
+	color: black;
+	font-family: Georgia;
+}
+#form {
+	width: 800px;
+}
+.panel-body button{
+	width: 200px;
+	margin-right: 16px;
+}
+span{
+	margin-left: 5px;
+}
+.top {
+	background: url('http://www.armapartners.com/wp-content/uploads/2013/06/banner-telaviv-sm.jpg') no-repeat center center fixed;
+	height: 100%;
+	position: absolute;
+	width: 100%;
+	z-index: 1;
+}
+.list {
+	text-align: center;
+}
+.btn-center{
+	text-align: center;
+}
+.text-success{
+	top: 10px;
+}
+
+.bottom{
+	background: lightblue no-repeat center center fixed;
+	height: 100%;
+	background-size: cover;
+	z-index: 2;
+}
+html{
+	background: lightblue;
+}
+
+.notice .text2{
+	left: 200px;
+	font-size: 20px;
+	font-family: Verana;
+	color: #2ecc71;
+}
+.notice .text1 {
+	font-size: 20px;
+	font-family: Verana;
+	color: #ecf0f1;
+}
+.btn-hover:hover{
+	background-color: #bdc3c7;
+}
+a:hover{color: lightblue; text-decoration: none}
