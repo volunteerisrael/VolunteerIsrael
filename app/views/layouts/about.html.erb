@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>VolunteerIsrael</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <title>About</title>
+  <%= stylesheet_link_tag 'about.css' %>
+  <%= stylesheet_link_tag 'navbar.css' %>
+  <%= stylesheet_link_tag 'bootstrap.min.css' %>
   <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500' rel='stylesheet' type='text/css'>
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
   <%= csrf_meta_tags %>
@@ -10,9 +12,7 @@
 
 </head>
 <body>
-	<%= render "partials/navbar" %>
-    <%#= render "partials/flash" %>
-    
+	<%= render "partials/navbar" %>    
     <%= yield %>
     
   <%= render "partials/footer" %>

@@ -1,0 +1,21 @@
+.panel panel-info {
+	height: 300px;
+}
+.img-responsive{
+	width: 250px;
+	height: 200px;
+}
+body{
+	background: lightblue;
+}
+ul{
+	margin-left: auto;
+	margin-right: auto;
+	width: auto;
+}
+#back {
+	left: 200px;
+}
+#description{
+	width: 500px;
+}

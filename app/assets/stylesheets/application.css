@@ -11,6 +11,7 @@
  * file per style scope.
  *
  *= require navbar
+ *= require footer
  *= require bootstrap.min
  *= require organizations.css
  */

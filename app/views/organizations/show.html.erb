@@ -6,41 +6,42 @@
 <br>
 <p id="notice"><%= notice %></p>
 <div class='container'>
+ <ul> 
   <p>
-      <strong>Organization:</strong>
-      <%= @organization.name %>
+      <h1><u><%= @organization.name %></u></h1>
     </p>
 
-    <p>
-      <strong>Description:</strong>
-      <%= @organization.description %>
-    </p>
+    <div id='description'><p>
+        <%= @organization.description %>
+    </p></div>
 
     <p>
-      <strong>Address1:</strong>
+      <strong>Location:</strong>
       <%= @organization.address1 %>
     </p>
-
-    <p>
-      <strong>Address2:</strong>
-      <%= @organization.address2 %>
-    </p>
-
-    <p>
-      <strong>City:</strong>
-      <%= @organization.city %>
-    </p>
-
-    <p>
-      <strong>Zipcode:</strong>
-      <%= @organization.zipcode %>
-    </p>
-
     <p>
       <strong>Country:</strong>
       <%= @organization.country %>
     </p>
-     <%= link_to 'Back', organizations_path %>
+
+    <p>
+      <strong>Ages:</strong>
+        <%= @organization.age %>
+    </p>
+     <p>
+      <strong>Length of trip:</strong>
+      <%= @organization.length %>
+    </p>
+
+    <p>
+      <strong>Cost:</strong>
+      <%= @organization.cost %>
+    </p>
+
+    <p>
+    <strong>Visit website:</strong>
+    <%= link_to @organization.name, @organization.source%>
+     <p><%= link_to 'Back', organizations_path %></p>
   </ul>
 
 </div>

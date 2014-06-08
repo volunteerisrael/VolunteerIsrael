@@ -9,7 +9,7 @@
             <% if alert %>
                 <p class='text2' id="fade-out"><%= alert %></p>
             <% end %></center>
-				<center><h1>Welcome to Volunteer Israel</h1></center>
+				<center><h1><b>Welcome to Volunteer Israel</b></h1></center>
 			</div>
 		</div>
 		<div class='row'>
@@ -20,12 +20,19 @@
 		<div class='row'>
 			<div class='col-md-6'>
 				<div class="form-group">
-				  <div class="input-group">
-				    <input type="text" class="form-control" placeholder="search location, category, places, organizations">
-				    <span class="input-group-btn">
+				  <!-- <div class="input-group"> -->
+				   <!--  <input type="text" class="form-control" placeholder="search location, category, places, organizations"> -->
+				    <!-- <span class="input-group-btn">
 				      <button class="btn btn-md btn-default btn-hover" type="submit">Search</button>
-				    </span>
-				  </div>
+				    </span> -->
+
+				  <!-- </div> -->
+				  <center>
+				  <%= form_tag(organizations_path, :method => "get", id: "search") do %>
+  					<%= text_field_tag :search, params[:search], placeholder: "Search organization, location, category" %>
+  					<%= submit_tag "Search", :name => nil %>
+				<% end %>
+			</center>
 				</div>
     		</div>
 		</div>
@@ -52,7 +59,7 @@
 			        </div>
 			        <div class="panel-body"> 
 			          <%= image_tag organization.organization_image, :class => "img-responsive" %>
-			          <p><%= organization.name %></p>
+			          <p><%= organization.address1 %></p>
 			          <%= link_to 'More Info', organization, :class =>"btn btn-md  btn-primary btn-center btn-block" %>
 			        </div>
 				  </div>

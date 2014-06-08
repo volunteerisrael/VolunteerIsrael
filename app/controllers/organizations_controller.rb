@@ -4,7 +4,14 @@ class OrganizationsController < ApplicationController
   # GET /organizations
   # GET /organizations.json
   def index
-    @organizations = Organization.all.order("created_at DESC")
+    if params[:search]
+      @organizations = Organization.search(params[:search]).order("created_at DESC")
+      if @organizations.length < 1
+        @organizations = Organization.all.order("created_at DESC")
+      end
+    else
+      @organizations = Organization.all.order("created_at DESC")
+    end
   end
 
   # GET /organizations/1
@@ -12,6 +19,9 @@ class OrganizationsController < ApplicationController
   def show
   end
 
+  def search 
+    
+  end
   # GET /organizations/new
   # def new
   #   @organization = Organization.new

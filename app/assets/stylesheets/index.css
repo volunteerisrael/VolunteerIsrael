@@ -1,3 +1,6 @@
+#search {
+	
+}
 .img-responsive{
 	width: 250px;
 	height: 200px;
@@ -7,26 +10,29 @@
  }
 
 h1 {
-	font-weight: bolder;
+	font-weight: 10000;
 	font-size:70px;
-	font-weight: 100;
-	color: #E6E6E6;	
+	font-weight: 1000;
+	color: #e3e8fc;	
 	font-family: 'Ubuntu', sans-serif;
 	position: relative;
+	
 }
 h2, h3 {
 	font-family: 'Ubuntu', sans-serif;
-	color: #E6E6E6;
+	color: black;
+	font-weight: 10000;
+	
 }
 .container .row .col-md-10 {
-	top: 5em;
+	top: 10em;
 }
 .col-md-12 h3 {
 	margin-top: 16em;
 	font-size: 40px;
 }
 .col-md-12 {
-	top: 13em;
+	top: 14em;
 }
 
 .col-md-4{
@@ -39,7 +45,7 @@ h2, h3 {
 	
 }
 .row .col-md-6 {
-	top: 14em;
+	top: 16em;
 	margin-left: auto;
 	margin-right: auto;
 	left: 26em;
@@ -61,11 +67,13 @@ span{
 	margin-left: 5px;
 }
 .top {
-	background: url('http://www.armapartners.com/wp-content/uploads/2013/06/banner-telaviv-sm.jpg') no-repeat center center fixed;
+	background: url('http://upload.wikimedia.org/wikipedia/commons/c/c2/Jerusalem_Dome_of_the_rock_BW_14.JPG') no-repeat center center fixed;
 	height: 100%;
+	width: 100%;
 	position: absolute;
 	width: 100%;
 	z-index: 1;
+	background-size: cover;
 }
 .list {
 	text-align: center;
@@ -91,12 +99,12 @@ html{
 	left: 200px;
 	font-size: 20px;
 	font-family: Verana;
-	color: #2ecc71;
+	color: lightgreen;
 }
 .notice .text1 {
 	font-size: 20px;
 	font-family: Verana;
-	color: #ecf0f1;
+	color: lightgreen;
 }
 .btn-hover:hover{
 	background-color: #bdc3c7;
